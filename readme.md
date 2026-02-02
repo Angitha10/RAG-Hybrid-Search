@@ -35,29 +35,14 @@ LLAMA_CLOUD_API_KEY=your_llama_cloud_api_key
     cd <repository_folder>
     ```
 
-2.  **Install dependencies:**
+2. **Start the application:**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Start Qdrant (Vector Database):**
-    Ensure you have `docker-compose.yml` set up or run Qdrant manually.
     
     ```bash
     docker-compose up -d
     ```
-    *Note: The code expects Qdrant to be available at host `qdrant` on port `6333` (typical for Docker networking) or `localhost` if running locally outside a container. Check `qdrant_upload_retrieve.py` line 62/158 if you need to adjust hostnames.*
 
-## Usage
-
-### 1. Start the API Server
-
-```bash
-uvicorn main:app --reload
-```
-
-The API will be available at `http://localhost:8000`.
+Visit `http://localhost:8000/docs` to test the API endpoints using the Swagger UI.
 
 ### 2. API Endpoints
 
@@ -79,9 +64,6 @@ Retrieves relevant context and answers a query.
     -   `query_text`: Your question.
     -   `collection_name`: The collection to search in.
 
-### 3. Interactive Docs
-
-Visit `http://localhost:8000/docs` to test the API endpoints using the Swagger UI.
 
 ## Project Structure
 
