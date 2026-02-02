@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-dotenv
+langchain
+langchain-openai
+qdrant-client
+nest-asyncio
+llama_parse
+fastembed
+python-multipart
+llama_index
+langchain-core
+qdrant-client
+openai
